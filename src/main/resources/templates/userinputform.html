@@ -1,0 +1,11 @@
+<div xmlns:th="http://www.thymeleaf.org">
+    <form action="#" th:action="@{/addUserToDB}" th:object="${userdata}" method="post">
+        <label for="user">User name</label>
+        <input type="text" id="user" th:field="*{user}" placeholder="Type name">
+        <br>
+        <br>
+        <label for="email">User email</label>
+        <input type="email" id="email" th:field="*{email}" placeholder="Type user email">
+        <input type="submit" value="Add user to DB">
+    </form>
+</div>
